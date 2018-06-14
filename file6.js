@@ -1,0 +1,12 @@
+function Entity(a,b){
+    console.log(this);
+    this.a=a;
+    this.b=b;
+}
+ Entity.prototype.display=function(){
+     console.log(this.a+" "+this.b);
+ }
+var obj1=new Entity(12,23);
+var obj2 =new Entity(34,34);
+ obj1.display();
+obj2.display();
